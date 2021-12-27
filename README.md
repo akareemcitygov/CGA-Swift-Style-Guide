@@ -1,6 +1,5 @@
-# CGA-Swift-Style-Guide
 
-# The Official Swift Style Guide.
+# The Official CGA Swift Style Guide.
 
 We created this style guide to keep the standard of code in our all applications and framework.
 
@@ -46,11 +45,6 @@ We created this style guide to keep the standard of code in our all applications
 * [Semicolons](#semicolons)
 * [Parentheses](#parentheses)
 * [Multi-line String Literals](#multi-line-string-literals)
-* [No Emoji](#no-emoji)
-* [No #imageLiteral or #colorLiteral](#no-imageliteral-or-colorliteral)
-* [Organization and Bundle Identifier](#organization-and-bundle-identifier)
-* [Copyright Statement](#copyright-statement)
-* [Smiley Face](#smiley-face)
 * [References](#references)
 
 
@@ -61,13 +55,12 @@ We created this style guide to keep the standard of code in our all applications
 Descriptive and consistent naming makes software easier to read and understand. Use the Swift naming conventions described in the [API Design Guidelines](https://swift.org/documentation/api-design-guidelines/). Some key takeaways include:
 
 - striving for clarity at the call site
-- prioritizing clarity over brevity
 - using `camelCase` (not `snake_case`)
-- using `UpperCamelCase` for types and protocols, `lowerCamelCase` for everything else
-- including all needed words while omitting needless words
+- <img width="581" alt="Screen Shot 2021-12-27 at 6 32 54 PM" src="https://user-images.githubusercontent.com/96474821/147476923-2f3f03ab-f227-4d59-8acf-a7616ac5bc6f.png">
+- - `lowerCamelCase` for everything else
+- using `UpperCamelCase/PascalCase` for types and protocols, 
+- <img width="567" alt="Screen Shot 2021-12-27 at 6 32 49 PM" src="https://user-images.githubusercontent.com/96474821/147477050-6d461e0f-52b1-4789-afdc-016a025a83bd.png">
 - using names based on roles, not types
-- sometimes compensating for weak type information
-- striving for fluent usage
 - naming methods for their side effects
   - verb methods follow the -ed, -ing rule for the non-mutating version
   - noun methods follow the formX rule for the mutating version
@@ -75,15 +68,11 @@ Descriptive and consistent naming makes software easier to read and understand. 
   - protocols that describe _what something is_ should read as nouns
   - protocols that describe _a capability_ should end in _-able_ or _-ible_
 - using terms that don't surprise experts or confuse beginners
-- generally avoiding abbreviations
-- using precedent for names
-- preferring methods and properties to free functions
+- generally avoiding `abbreviations`
 - casing acronyms and initialisms uniformly up or down
 - giving the same base name to methods that share the same meaning
 - avoiding overloads on return type
 - choosing good parameter names that serve as documentation
-- preferring to name the first parameter instead of including its name in the method name, except as mentioned under Delegates
-- labeling closure and tuple parameters
 - taking advantage of default parameters
 
 ### Prose
@@ -95,10 +84,6 @@ When referring to methods in prose, being unambiguous is critical. To refer to a
 3. Write the full method name with argument labels and types. **Example:** Next, you need to call `addTarget(_: Any?, action: Selector?)`.
 
 For the above example using `UIGestureRecognizer`, 1 is unambiguous and preferred.
-
-**Pro Tip:** You can use Xcode's jump bar to lookup methods with argument labels. If you’re particularly good at mashing lots of keys simultaneously, put the cursor in the method name and press **Shift-Control-Option-Command-C** (all 4 modifier keys) and Xcode will kindly put the signature on your clipboard.
-
-![Methods in Xcode jump bar](screens/xcode-jump-bar.png)
 
 
 ### Class Prefixes
